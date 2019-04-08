@@ -16,4 +16,4 @@ function flatten(array,result) {
         }
     })
     return result;
-};
+}
