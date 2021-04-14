@@ -5,8 +5,8 @@
 返回值：(Array): 返回过滤掉假值的新数组。
 
 */
-function compact(array) {
-    return array.filter((item) => {
-        return !!item === true;
-    })
-};
+export default function compact(array: Array<any>) {
+  return array.filter((item) => {
+    return !!item === true;
+  });
+}

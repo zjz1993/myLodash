@@ -5,12 +5,12 @@
 [size=1] (number): 每个数组区块的长度
 
 */
-function chunk(array, size=1) {
-    let resultArray = [];
-    let remainder = Math.ceil(array.length / size);
-    for(let i=0;i<remainder;i++){
-        const arrays = array.slice(i*size,(i+1)*size);
-        resultArray.push(arrays);
-    }
-    return resultArray;
-};
+export default function chunk(array: Array<any>, size: number = 1) {
+  const resultArray = [];
+  const remainder = Math.ceil(array.length / size);
+  for (let i = 0; i < remainder; i++) {
+    const arrays = array.slice(i * size, (i + 1) * size);
+    resultArray.push(arrays);
+  }
+  return resultArray;
+}
