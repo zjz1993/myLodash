@@ -7,6 +7,10 @@
 |已完成LodashAPI   | api类型  |是否通过原版单元测试|
 |  ----  | ----  |----|
 | chunk  | array |✔️|
+| flatten  | array |✔️|
+| flattenDepth  | array |✔️|
+| drop  | array |✔️|
+| dropRight  | array |✔️|
 
 ## License
 

@@ -11,11 +11,11 @@ value (*): 填充给 array 的值。
 返回值：(Array): (Array): 返回 array。
 
 */
-function fill(array,value,start=0,end=array.length) {
-   let processedStart = start < 0 ? 0 : start;
-   let processedEnd = end > array.length ? array.length : end;
-   for(let i = processedStart;i < processedEnd;i++) {
-       array[i] = value;
-   }
-   return array;
+function fill(array, value, start = 0, end = array.length) {
+  const processedStart = start < 0 ? 0 : start;
+  const processedEnd = end > array.length ? array.length : end;
+  for (let i = processedStart; i < processedEnd; i++) {
+    array[i] = value;
+  }
+  return array;
 }
