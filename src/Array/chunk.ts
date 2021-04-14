@@ -6,11 +6,20 @@
 
 */
 export default function chunk(array: Array<any>, size: number = 1) {
-  const resultArray = [];
-  const remainder = Math.ceil(array.length / size);
-  for (let i = 0; i < remainder; i++) {
-    const arrays = array.slice(i * size, (i + 1) * size);
-    resultArray.push(arrays);
+  if (typeof size !== "number" || !Array.isArray(array)) {
+    return [];
+  } else {
+    size = parseInt(String(size), 10);
+    if (size === 0) {
+      return [];
+    } else {
+      const resultArray = [];
+      const remainder = Math.ceil(array.length / size);
+      for (let i = 0; i < remainder; i++) {
+        const arrays = array.slice(i * size, (i + 1) * size);
+        resultArray.push(arrays);
+      }
+      return resultArray;
+    }
   }
-  return resultArray;
 }
