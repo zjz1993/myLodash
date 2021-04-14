@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
+    "declaration": true,
     "outDir": "./dist",
     "allowJs": true,
+    "rootDir": "./src",
     "lib": [
       "dom",
       "es5",
@@ -10,6 +12,12 @@
       "es2015.promise"
     ]
   },
+  "types": [
+    "jest"
+  ],
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,8 +1,7 @@
 process.env.NODE_ENV = "development";
-
-const path = require("path");
-const serve = require("rollup-plugin-serve");
-const configList = require("./rollup.config");
+import path from "path";
+import serve from "rollup-plugin-serve";
+import configList from "./rollup.config";
 
 const resolveFile = function (filePath) {
   return path.join(__dirname, "..", filePath);
@@ -34,5 +33,4 @@ configList.map((config, index) => {
 
   return config;
 });
-
-module.exports = configList;
+export default configList;

@@ -1,0 +1,9 @@
+.idea/
+build/
+coverage/
+example/
+node_modules/
+src/
+test/
+.eslint*
+babel.config.js
